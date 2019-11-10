@@ -1,0 +1,82 @@
+
+
+
+.menu {
+  line-height: 1.4;
+  font-family: "Space Mono", monospace;
+  background: #1d1f20;
+  padding: 25px 35px;
+  width: 300px;
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  border-radius: 16px;
+  box-shadow: 0 0 60px -15px black;
+  transform: scale(0) rotate(360deg);
+  transition: all 0.75s;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.menu.menu_active {
+  transform: scale(1) rotate(0deg);
+}
+
+.menu > ol > li {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.menu > ol > li:first-of-type {
+  color: #efc371;
+}
+
+.menu > ol > li > ol {
+  margin: 10px 0 0 20px;
+  border-left: 1px solid #4d4d4c;
+  color: #ae94c0;
+}
+
+.menu > ol > li > ol > li {
+  margin: 7px 0;
+  padding-left: 20px;
+}
+
+.menu a:hover {
+  color: #dd925f;
+}
+
+.btnmenu {
+  font-size: 1.5em;
+	position: absolute;
+	top: 0;
+	left:  0;
+	overflow: hidden;
+	height: 100%;
+	padding: 0 1.195em;
+	cursor: pointer;
+	color: #abacae;
+	border: none;
+	background-color: #131415;
+}
+
+.btnmenu:hover {
+  //border-bottom: 6px dotted #cfd8dc;
+  //padding-bottom: 10px;
+  //top: calc(10vh - 50px);
+  color: #ffffff;
+}
+
+.menu p {
+  font-family: "Roboto Mono", monospace;
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  color: #cfd8dc;
+  transition: all 0.2s;
+}
+
+.menu p:hover {
+  border-bottom: 2px dotted #cfd8dc;
+  padding-bottom: 5px;
+}
